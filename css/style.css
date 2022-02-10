@@ -40,7 +40,7 @@ a {
     background-color: #6d6c69;
     position: relative;
     z-index: 1;
-    width: 100%;
+    width: 100vw;
     padding: 25px;
 }
 
@@ -68,6 +68,10 @@ a {
 
 .header-logo {
     width: 60%;
+}
+
+.menu-button__header {
+    display: none;
 }
 
 .menu-list {
@@ -339,10 +343,6 @@ a {
     color: inherit;
 }
 
-h4 {
-    line-height: 1.2;
-}
-
 .search-section {
     position: relative;
     margin-top: 58px;
@@ -365,6 +365,7 @@ h4 {
     border: none;
     font-family: inherit;
     font-size: 1rem;
+    outline: 0;
 }
 
 .search-button {
@@ -391,6 +392,7 @@ h4 {
     border: none;
     font-family: inherit;
     font-size: 1rem;
+    outline: 0;
 }
 
 .subscribe-button,
