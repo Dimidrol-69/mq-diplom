@@ -36,7 +36,7 @@
     }
 
     .page-content {
-        width: 100vw;
+        width: 100%;
         padding: 50px 36px 0;
     }
 
@@ -126,7 +126,7 @@
         padding: 0;
     }
 
-    .menu-list {
+    .main-menu {
         display: none;
     }
 
@@ -171,6 +171,31 @@
 
     .menu-button__header::after {
         bottom: 0;
+    }
+    .menu-button__header:focus ~ .sub-menu,
+    .menu-button__header:active ~ .sub-menu,
+    .sub-menu:hover {
+        display: block;
+    }
+    .menu {
+        position: relative;
+    }
+    .sub-menu {
+        position: absolute;
+        background: rgba(68, 82, 76, 0.7);
+        width: 150px;
+        padding: 10px;
+        z-index: 1;
+        right: 0;
+        top: 15px;
+        border-radius: 10px;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+    }
+    .sub-menu li {
+        padding: 5px;
+    }
+    .sub-menu li a:hover {
+        text-decoration: underline;
     }
 }
 

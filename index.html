@@ -16,28 +16,24 @@
             <div class="header-container">
                 <a href="#0 "><img src="svg/noemi-logo.svg" class="header-logo" alt="Логотип"></a>
                 <nav class="menu">
-                    <button class="menu-button__header">
-                        <span class="menu-button__label"></span>
-                    </button>
-                    <ul class="menu-list">
-                        <li class="menu-list-item">
-                            <a class="menu-link" href="#0">главная</a>
-                        </li>
-                        <li class="menu-list-item">
-                            <a class="menu-link" href="#0">посты</a>
-                        </li>
-                        <li class="menu-list-item">
-                            <a class="menu-link" href="#0">статьи</a>
-                        </li>
-                        <li class="menu-list-item">
-                            <a class="menu-link" href="#0">теги</a>
-                        </li>
-                        <li class="menu-list-item">
-                            <a class="menu-link" href="#0">темы</a>
-                        </li>
-                        <li class="menu-list-item">
-                            <a class="menu-link" href="#0">контакты</a>
-                        </li>
+                    <ul class="main-menu">
+                        <li><a href="#0">главная</a></li>
+                        <li><a href="#0">посты</a></li>
+                        <li><a href="#0">статьи</a></li>
+                        <li><a href="#0">теги</a></li>
+                        <li><a href="#0">темы</a></li>
+                        <li><a href="#0">контакты</a></li>
+                    </ul>
+                     <button class="menu-button__header" tabindex="1">
+                        <span class="menu-button__label"></span>  
+                    </button>  
+                    <ul class="sub-menu">
+                        <li><a href="#0">главная</a></li>
+                        <li><a href="#0">посты</a></li>
+                        <li><a href="#0">статьи</a></li>
+                        <li><a href="#0">теги</a></li>
+                        <li><a href="#0">темы</a></li>
+                        <li><a href="#0">контакты</a></li>
                     </ul>
                 </nav>
             </div>
@@ -359,9 +355,11 @@
             <h3><a class="shop-title" href="#0">наши изделия</a></h3>
             <div class="shop-container">
                 <article class="shop-box">
-                    <div class="product-preview">
+                    <picture class="product-preview">
+                        <source srcset="img/shop-item-mobile1.jpg" media="(max-width: 640px)">
+                        <source srcset="img/shop-item-tablet1.jpg" media="(max-width: 1200px)">
                         <img class="product-img" src="img/shop-item-desk1.jpg" alt="Подушка">
-                    </div>
+                    </picture>
                     <div class="product-content">
                         <h4><a class="product-name" href="#0">подушки на диван</a></h4>
                         <div class="product-text">Набор из двух подушек с модными принтами. Видео о создании <a class="text-link"
@@ -377,9 +375,11 @@
                     </div>
                 </article>
                 <article class="shop-box">
-                    <div class="product-preview">
+                    <picture class="product-preview">
+                        <source srcset="img/shop-item-mobile2.jpg" media="(max-width: 640px)">
+                        <source srcset="img/shop-item-tablet2.jpg" media="(max-width: 1200px)">
                         <img class="product-img" src="img/shop-item-desk2.jpg" alt="кукла">
-                    </div>
+                    <picture/>
                     <div class="product-content">
                         <h4><a class="product-name" href="#0">кукла &laquo;зайчик&raquo;</a></h4>
                         <div class="product-text">Интерьерная рукодельная кукла &laquo;Зайчик&raquo;, созданию которой посвящена
@@ -394,9 +394,11 @@
                     </div>
                 </article>
                 <article class="shop-box">
-                    <div class="product-preview">
+                    <picture class="product-preview">
+                        <source srcset="img/shop-item-mobile3.jpg" media="(max-width: 640px)">
+                        <source srcset="img/shop-item-tablet3.jpg" media="(max-width: 1200px)">
                         <img class="product-img" src="img/shop-item-desk3.jpg" alt="рамка">
-                    </div>
+                    </picture>
                     <div class="product-content">
                         <h4><a class="product-name" href="#0">шестиугольная рамка</a></h4>
                         <div class="product-text">Необычная рамка для украшения дома из видео
@@ -452,6 +454,7 @@
 
         <div class="popup_hidden">
             <form class="popup-content">
+                <button class="close-button" type="button"></button>
                 <h2 class="popup-title">ваш фидбек</h2>
                 <div class="form-row">
                     <span class="form-hint">Как часто вы заходите на сайт?

@@ -40,7 +40,7 @@ a {
     background-color: #6d6c69;
     position: relative;
     z-index: 1;
-    width: 100vw;
+    width: 100%;
     padding: 25px;
 }
 
@@ -74,17 +74,22 @@ a {
     display: none;
 }
 
-.menu-list {
+.main-menu {
     display: flex;
     flex-wrap: wrap;
     gap: 33px;
 }
 
-.menu-link {
+.main-menu li a, 
+.sub-menu li a {
     font-family: inherit;
     color: #ffffff;
     font-size: 1rem;
     text-transform: uppercase;
+}
+
+.sub-menu {
+    display: none;
 }
 
 .header-title {
@@ -615,14 +620,14 @@ a {
     position: relative;
 }
 
-.popup-content::before {
-    content: url(../svg/form-x.svg);
-    display: block;
+.close-button {
     width: 20px;
     height: 20px;
     position: absolute;
     top: -5%;
     right: 0;
+    background: url(../svg/form-x.svg) no-repeat;
+    border: none;
 }
 
 .popup-title {
